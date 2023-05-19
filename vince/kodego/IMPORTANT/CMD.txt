@@ -1,0 +1,37 @@
+dir - Shows the current directory (folder).
+
+cd pathname - Change directory (folder) in the file system.
+
+cd .. - Move one level up (one folder) in the file system.
+ 
+Opening files - To open a file, you need to be in the directory of the file. Then enter the filename.
+
+cls - Clears the CLI window.
+
+exit - Closes the CLI window.
+
+help -Shows the manual for a given command.
+
+copy - Copy a file to another folder. You can duplicate files by copying them to the same folder.
+
+move - Move a file to another folder.
+
+mkdir or md -Creates a new directory (folder).
+
+rmdir or rd - Removes a directory (folder). The directory needs to be empty. You can force deletion by using rmdir /r.
+
+del - Removes a file.
+
+ren - Renames a file.
+
+> - Send to a file whatever information from the command would have been displayed in the Command Prompt window had you not used the operator.
+
+>> - Works just like the single greater-than sign but the information is appended to the end of the file instead of overwriting it.
+
+< - Read the input for a command from a file instead of from the keyboard.
+
+| - Read the output from one command and use if for the input of another.
+
+echo - The echo command displays text.
+
+type nul > filename - Creates an empty file.

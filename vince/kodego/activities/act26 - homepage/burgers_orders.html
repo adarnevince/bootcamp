@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bear Burger's - Order</title>
+    <style>
+      thead {
+        background-color: rgb(255, 200, 99);
+      }
+      th.subh {
+        background-color: rgb(255, 229, 182);
+      }
+      #menu-footnote {
+        background-color: rgb(250, 238, 216);
+      }
+      table,
+      th,
+      td {
+        border: 1px solid lightgrey;
+        border-collapse: collapse;
+      }
+      td.item-row:hover {
+        background-color: orange;
+      }
+
+      tr.item-row:hover {
+        background-color: orange;
+      }
+      #nav_items:hover {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/161/161588.png"
+            width="40px"
+            style="margin-left: 5px; margin-bottom: 3px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" id="nav_items">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item" id="nav_items">
+              <a class="nav-link active" href="burgers_orders.html">Order</a>
+            </li>
+            <li class="nav-item" id="nav_items">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Shop</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Choice 1</a></li>
+                <li><a class="dropdown-item" href="#">Choice 2</a></li>
+                <li><a class="dropdown-item" href="#">Choice 3</a></li>
+              </ul>
+            </li> -->
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container mb-5">
+      <h1 class="display-1">Order Here!</h1>
+      <div class="row">
+        <div class="col-lg-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Icons</th>
+                <th>Item Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center">
+                <th colspan="3" class="subh">Meals</th>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img src="burger-removebg-preview.png" style="width: 80px" />
+                </td>
+                <td>Burger</td>
+                <td>P55.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img
+                    src="fried_chicken-removebg-preview.png"
+                    style="width: 85px"
+                  />
+                </td>
+                <td>Fried Chicken</td>
+                <td>P55.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img
+                    src="spaghetti.png"
+                    style="width: 70px; margin-left: 5px; margin-top: 0%"
+                  />
+                </td>
+                <td>Spaghetti</td>
+                <td>P50.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img src="pizza.png" style="width: 75px; margin-left: 5px" />
+                </td>
+                <td>Pizza</td>
+                <td>P150.00</td>
+              </tr>
+              <tr class="text-center">
+                <th colspan="3" class="subh">Drinks</th>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img
+                    src="coke-removebg-preview.png"
+                    style="width: 70px; margin-left: 2px"
+                  />
+                </td>
+                <td>Coke</td>
+                <td>P20.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img src="sprite-removebg-preview.png" style="width: 70px" />
+                </td>
+                <td>Sprite</td>
+                <td>P20.00</td>
+              </tr>
+              <tr class="item-row">
+                <td>
+                  <img
+                    src="sarsi-removebg-preview.png"
+                    style="width: 40px; margin-left: 13px"
+                  />
+                </td>
+                <td>Sarsi</td>
+                <td>P20.00</td>
+              </tr>
+              <tr>
+                <td colspan="2" rowspan="2" id="menu-footnote">
+                  All items are subject to tax. No refunds. All items are not
+                  transferrable.
+                </td>
+                <td>Extra Rice - P20.00</td>
+              </tr>
+              <tr>
+                <td>Condiments - P20.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="https://www.dellacasapasta.com/images/basil-sauce.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <div style="background-color: black">
+      <div class="container text-light pt-5">
+        <h1 class="display-1">Tell Us What You Think!</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="https://thumbs.dreamstime.com/b/cucumber-burger-ingredients-floating-black-background-isolated-vertical-cucumber-burger-ingredients-floating-bun-cheese-tomato-177814997.jpg"
+              alt="veritcal burger with ingredients spaced out"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label for="name">Name (optional)</label>
+                <input type="text" id="name" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="province">Province</label>
+                <input type="text" id="province" class="form-control" />
+              </div>
+              <div class="form-group mt-3">
+                <label>How many times have you went to our restaurant?</label
+                ><br />
+                <input type="radio" id="first_time" name="times_visited" />This
+                is the first time!
+                <br />
+                <input
+                  type="radio"
+                  id="second_time"
+                  name="times_visited"
+                />Second time <br />
+                <input
+                  type="radio"
+                  id="third_time  "
+                  name="times_visited"
+                />Third time or more
+              </div>
+              <div class="form-group mt-3">
+                <label>How would you rate the food?</label><br />
+                <input type="radio" id="rating1" name="food_rating" />⭐<br />
+                <input type="radio" id="rating2 " name="food_rating" />⭐⭐
+                <br />
+                <input type="radio" id="rating3" name="food_rating" />⭐⭐⭐
+                <br />
+                <input type="radio" id="rating4" name="food_rating" />⭐⭐⭐⭐
+                <br />
+                <input type="radio" id="rating5" name="food_rating" />⭐⭐⭐⭐⭐
+                <br />
+              </div>
+              <div class="form-group mt-3">
+                <label>How would you rate our services?</label>
+                <br />
+                <input type="radio" id="serv1" name="ser_rating" />⭐
+                <br />
+                <input type="radio" id="serv2" name="ser_rating" />⭐⭐
+                <br />
+                <input type="radio" id="serv3" name="ser_rating" />⭐⭐⭐
+                <br />
+                <input type="radio" id="serv4" name="ser_rating" />⭐⭐⭐⭐
+                <br />
+                <input type="radio" id="serv5" name="ser_rating" />⭐⭐⭐⭐⭐
+                <br />
+              </div>
+              <input type="submit" class="btn btn-primary mt-3" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-center" id="footnote">
+              <i>vincemadarne@gmail.com | 09181234567</i>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3 text-center">
+            <a href="https://www.facebook.com/adarnevince" target="_blank"
+              ><img src="fb.jpg" width="20px"
+            /></a>
+
+            <a href="https://www.instagram.com/vinceadarne/" target="_blank"
+              ><img src="ig.jpg" width="19px"
+            /></a>
+
+            <a href="#"><img src="twitter.jpg " width="18px" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

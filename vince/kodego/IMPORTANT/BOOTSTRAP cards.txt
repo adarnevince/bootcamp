@@ -1,0 +1,94 @@
+SAMPLE
+
+<div class="col-lg-2 px-2">
+        <div class="card">
+            <img
+              src="Spicy-Shoyu-Ramen-8055-I.jpg"
+              class="card-img-top"
+              alt="ramen"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spicy Shoyu Ramen</h5>
+              <p class="card-text">
+                Spicy ramen filled with beef brisket, egg, spring onion, and
+                rice cake.
+              </p>
+              <p class="card-text text-muted">₱200.00</p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+</div>
+
+The building block of a card is the .card-body.
+Use it whenever you need a padded section within a card.
+
+Card titles are used by adding .card-title to a <h*> tag. In the same way, links are added and placed next to each other by adding .card-link to an <a> tag.
+Subtitles are used by adding a .card-subtitle to a <h*> tag. If the .card-title and the .card-subtitle items are placed in a .card-body item, the card title and subtitle are aligned nicely.
+
+
+MORE SAMPLES
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+---------------
+IMAGES
+.card-img-top places an image to the top of the card.
+With .card-text, text can be added to the card.
+Text within .card-text can also be styled with the standard HTML tags.
+
+Ex.
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+----------------
+List Groups
+Create lists of content in a card with a flush list group.
+
+REF PIC:https://kodego.instructure.com/courses/228/files/45738/preview
+
+Ex.
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Featured
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul>
+</div>
+
+----------------
+HORIZONTAL
+
+Using a combination of grid and utility classes, cards can be made horizontal in a mobile-friendly and responsive way.
+In the example below, we remove the grid gutters with .g-0 and use .col-md-* classes to make the card horizontal at the md breakpoint.
+Further adjustments may be needed depending on your card content.
+
+REF PIC: https://kodego.instructure.com/courses/228/files/45742/preview
+
+Ex.
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,20 @@
+SAMPLE
+
+<div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdown-button"
+        data-bs-toggle="dropdown"
+      >
+        Select Room
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Single room</a></li>
+        <li><a class="dropdown-item">Double room</a></li>
+        <li><a class="dropdown-item">Premium room</a></li>
+        <li><a class="dropdown-item">Executive suite</a></li>
+      </ul>
+</div>
+
+Any single .btn can be turned into a dropdown toggle with some markup changes.

@@ -1,0 +1,26 @@
+ul {
+  list-style-position: inside;
+}
+p {
+  color: red;
+  margin-left: 30px;
+  border: 2px solid black;
+}
+
+h1 {
+  font-family: Arial;
+  background-color: pink;
+}
+#lizard {
+  color: red;
+  font-size: 200%;
+}
+#turtle {
+  color: yellow;
+}
+#snake {
+  color: magenta;
+}
+.animal {
+  color: blue;
+}

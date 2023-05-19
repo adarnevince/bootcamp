@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      label,
+      input {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+      label {
+        width: 220px;
+      }
+    </style>
+    <title>ISCP Employee Registration Form</title>
+  </head>
+  <body>
+    <h1>ISCP Employee Registration Form</h1>
+    <img src="iscp_logo.jpg" width="200px" height="200px" />
+    <br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/aCUhfPAyDHY?start=3"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <form>
+      <h2>Basic information</h2>
+      <label for="first_name">First name:</label>
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        placeholder="Ex. Ricardo"
+        required
+      />
+      <br />
+      <label for="last_name">Last name:</label>
+      <input
+        type="text"
+        id="last_name"
+        name="last_name"
+        placeholder="Ex. Dalisay"
+        required
+      />
+      <br />
+      <label for="place_of_birth">Place of birth:</label>
+      <input
+        type="text"
+        id="place_of_birth"
+        name="place_of_birth"
+        placeholder="Bacoor City"
+      />
+      <br />
+      <label for="birthdate">Birthdate</label>
+      <input type="date" id="birthdate" />
+      <br />
+      <label for="gender">Gender:</label>
+      <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <br />
+      <label for="mother_name">Mother's Maiden Name:</label>
+      <input type="text" id="mother_name" name="mother_name" />
+      <br />
+      <label for="father_name">Father's name:</label>
+      <input type="text" id="father_name" name="father_name" />
+      <br />
+      <h2>Contact information</h2>
+      <label for="email">Email address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Ex. ricardodalisay@gmail.com"
+      />
+      <br />
+      <label for="contact_number">Contact number (mobile)</label>
+      <input
+        type="text"
+        id="contact_number"
+        name="contact_number"
+        name="contact_number"
+        placeholder="Ex. 09181234567"
+      />
+      <br />
+      <label for="telephone_number">Contact number (telephone)</label>
+      <input
+        type="text"
+        id="telephone_number"
+        name="telephone_number"
+        placeholder="Ex. 411-1234"
+      />
+      <br />
+      <h2>Address</h2>
+      <label for="street_number">Street Number:</label>
+      <input type="text" id="street_number" name="street_number" />
+      <br />
+      <label for="street_name">Street Name:</label>
+      <input type="text" id="street_name" name="street_name" />
+      <br />
+      <label for="barangay">Barangay</label>
+      <input type="text" id="barangay" name="barangay" />
+      <br />
+      <label for="city_town">City/Town</label>
+      <input
+        type="text"
+        id="city_town"
+        name="city_town"
+        placeholder="Ex. Tagbilaran City"
+      />
+      <br />
+      <label for="Province">Province</label>
+      <select name="Province">
+        <option value="Albay">Albay</option>
+        <option value="Bohol">Bohol</option>
+        <option value="Cebu">Cebu</option>
+        <option value="Iloilo">Iloilo</option>
+        <option value="Cagayan De Oro">Cagayan De Oro</option>
+        <option value="Manila">Manila</option>
+        <option value="Leyte">Leyte</option>
+      </select>
+      <br />
+      <label for="full_address">Full address:</label>
+      <input
+        type="text"
+        id="full_address"
+        name="full_address"
+        placeholder="Ex. 069 San Fransisco Street, Golden Dist. Biringan City, Bohol"
+      />
+      <br />
+      <h2>Government information</h2>
+      <label for="sss_id">SSS ID:</label>
+      <input type="text" id="sss_id" name="sss_id" placeholder="00-0000000-0" />
+      <br />
+      <label for="pag_ibig_id">Pag-Ibig ID:</label>
+      <input
+        type="text"
+        id="pag_ibig_id"
+        name="pag_ibig_id"
+        placeholder="000000000000"
+      />
+      <br />
+      <label for="philhealth_id">PhilHealth ID:</label>
+      <input
+        type="text"
+        id="philhealth_id"
+        name="philhealth_id"
+        placeholder="000000000000"
+      />
+      <br />
+      <label for="2x2_picture">Upload 2x2 picture:</label>
+      <input type="file" id="2x2_picture" accept="image/*" />
+      <br />
+      <label for="government_id">Upload picture of government ID</label>
+      <input type="file" id="government_id" accept="image/*" />
+      <br />
+      <h2>Account information</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <label for="con_password">Confirm password:</label>
+      <input type="password" id="con_password" name="con_password" required />
+      <br />
+      <label for="profile_image">Upload profile image:</label>
+      <input
+        type="file"
+        id="profile_image"
+        name="profile_image"
+        accept="image/*"
+      />
+      <br />
+      <h2>Have you experience any of the following in the last 30 days?</h2>
+      <input type="checkbox" name="coughing" value="on" />Coughing <br />
+      <input type="checkbox" name="fever" value="on" />Fever <br />
+      <input type="checkbox" name="headache" value="on" />Headache <br />
+      <input type="checkbox" name="common_cold" value="on" />Common cold <br />
+      <input type="checkbox" name="body_ache" value="on" />Body ache <br />
+      <input type="checkbox" name="sore_throat" value="on" />Sore throat <br />
+      <input type="checkbox" name="tiredness" value="on" />Tiredness <br />
+      <input type="checkbox" name="loss_of_smell" value="on" />Loss of smell
+      <br />
+      <h2>Give a short description about yourself</h2>
+      <textarea
+        cols="50"
+        rows="10"
+        placeholder="Type your answer here!"
+      ></textarea>
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

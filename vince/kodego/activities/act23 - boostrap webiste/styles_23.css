@@ -1,0 +1,85 @@
+body {
+  margin: 0%;
+  font-family: "Comic Sans MS";
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#div_table {
+  background: rgb(70, 130, 180);
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+h2 {
+  color: rgb(70, 130, 180);
+}
+#p1_phrase {
+  text-align: center;
+}
+#p1_phrase2 {
+  text-align: center;
+}
+#div2 {
+  margin-left: 20px;
+}
+#h3_1 {
+  color: rgb(70, 130, 180);
+}
+
+#savehuell {
+  color: rgb(255, 0, 216);
+}
+/* #div3 {
+  margin-top: 20px;
+} */
+#div4 {
+  text-align: center;
+  font-family: "Comic Sans MS";
+  /* font-size: 11px;
+  margin-left: 100px;
+  margin-right: 100px; */
+}
+#other_ministries {
+  margin-bottom: 0%;
+  margin-top: 0%;
+  margin-left: 25px;
+}
+#ul_min {
+  list-style-position: inside;
+  margin-top: 0%;
+}
+#footer {
+  text-align: center;
+  color: rgb(160, 160, 160);
+  margin-top: 30px;
+  font-size: 10px;
+}
+#foot1 {
+  margin-bottom: 0%;
+}
+#foot2 {
+  margin-top: 0%;
+}
+#privacy {
+  color: rgb(160, 160, 160);
+}
+#cookies {
+  color: rgb(160, 160, 160);
+}
+#termsofuse {
+  color: rgb(160, 160, 160);
+}
+#better_call_saul {
+  color: rgb(160, 160, 160);
+}
+#cop {
+  margin-bottom: 0%;
+  font-size: 7px;
+}
+#cop2 {
+  margin-top: 0%;
+  font-size: 7px;
+}

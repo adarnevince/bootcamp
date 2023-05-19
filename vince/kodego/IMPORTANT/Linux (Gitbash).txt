@@ -1,0 +1,78 @@
+BASIC COMMANDS
+
+man {command} - Display help pages of {command}
+>> {file} - Append to file (add to the specified file), preserving existing contents
+> {file} - Output to file, overwriting existing contents
+echo - Display text
+sudo {command} - Run in superuser mode
+
+FILE PERMISSION
+
+chmod - Changes the read, write, executable permission
+touch -Create a file
+
+FILE MANAGEMENT
+
+find - Search for a file
+ls - List content of directory
+rm - Removes files and directory
+cp - Copy files or directory
+mv - Move files or directory
+du - Disk usage
+
+FILE EDITOR
+
+vi - Open the virtual text editor
+
+The Linux text editor (vim)
+- The default editor that comes with the UNIX operating system is called vi (visual editor).
+-Using vi editor, we can edit an existing file or create a new file from scratch.
+-We can also use this editor to just read a text file.
+
+Modes of Operation in vi editor
+
+Command Mode
+-When vi starts up, it is in Command Mode.
+-This mode is where vi interprets any characters we type as commands and thus does not display them in the window.
+-This mode allows us to move through a file, and to delete, copy, or paste a piece of text.
+-To enter Command Mode from any other mode, it requires pressing the [Esc] key.
+-If we press [Esc] when we are already in Command Mode, then vi will beep or flash the screen.
+
+Insert mode
+-This mode enables you to insert text into the file.
+-Everything that’s typed in this mode is interpreted as input and finally, it is put in the file.
+-The vi always starts in command mode.
+-To enter text, you must be in insert mode.
+-To come in insert mode, you simply type i.
+-To get out of insert mode, press the Esc key, which will put you back into command mode.
+
+Last Line Mode (Escape Mode)
+-Line Mode is invoked by typing a colon [:], while vi is in Command Mode.
+-The cursor will jump to the last line of the screen and vi will wait for a command.
+-This mode enables you to perform tasks such as saving files, executing commands.
+
+Starting the vi Editor
+Creates a new file if it already not exist, otherwise opens existing file.
+
+vi filename - Opens an existing file in read only mode.
+vi -R filename - Opens an existing file in read only mode.
+view filename - Moving within a File (Navigation)
+
+TO MOVE AROUND within a file without affecting text must be in command mode (press Esc twice). Here are some of the commands can be used to move around one character at a time.
+k - moves the cursor up one line
+j - moves the cursor down one line
+h - moves the cursor to the left one character position
+l - moves the cursor to the right one character position
+0 or | - positions cursor at beginning of the line
+$ - positions cursor at end of the line
+W - positions cursor to the next word
+B - positions cursor to the previous word
+( - positions cursor to beginning of current sentence
+) - positions cursor to beginning of next sentence
+H - move to top of screen
+nH - moves to nth line from the top of the screen
+M - move to middle of screen
+L - move to bottom of screen
+nL - moves to nth line from the bottom of the screen
+colon along with x - colon followed by a number would position the cursor on line number represented by x.
+
